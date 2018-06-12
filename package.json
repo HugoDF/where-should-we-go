@@ -1,0 +1,33 @@
+{
+  "name": "where-should-we-go",
+  "version": "1.0.0",
+  "description": "Where should we go?",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel",
+    "test": "jest",
+    "predeploy": "rm -rf dist && parcel build index.html --public-url /where-should-we-go/ --no-minify",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [
+    "parcel",
+    "vue",
+    "jest"
+  ],
+  "author": "Hugo Di Francesco",
+  "license": "ISC",
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^1.3.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-vue": "^2.0.2",
+    "gh-pages": "^1.2.0",
+    "jest": "^23.1.0",
+    "parcel-bundler": "^1.8.1",
+    "vue-template-compiler": "^2.5.16"
+  },
+  "dependencies": {
+    "vue": "^2.5.16",
+    "vue-hot-reload-api": "^2.3.0"
+  }
+}
